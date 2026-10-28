@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Found It - Hyperlocal Offline Store & Product Locator</title>
+  <meta name="description" content="Discover items in stock right now at nearby physical retail stores in your city. Walk in, inspect, and buy directly from trusted local shopkeepers.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .features-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 24px;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .section-header h2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+    .section-header p {
+      font-size: 16px;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .pillar-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      text-align: center;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .pillar-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary);
+    }
+    .pillar-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--primary-light);
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin-bottom: 18px;
+    }
+    .pillar-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--secondary);
+      margin-bottom: 8px;
+    }
+    .pillar-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .cta-banner {
+      background: linear-gradient(135deg, #00A86B 0%, #007047 100%);
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 48px 32px;
+      text-align: center;
+      max-width: 1152px;
+      margin: 60px auto;
+      box-shadow: 0 12px 28px rgba(0, 168, 107, 0.25);
+    }
+    .cta-banner h2 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .cta-banner p {
+      font-size: 16px;
+      opacity: 0.95;
+      max-width: 650px;
+      margin: 0 auto 28px auto;
+    }
+    .cta-button-group {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-white {
+      background: #FFFFFF;
+      color: var(--primary);
+      padding: 12px 28px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.15s ease;
+    }
+    .btn-white:hover {
+      transform: scale(1.03);
+    }
+    .btn-outline {
+      border: 2px solid #FFFFFF;
+      color: #FFFFFF;
+      padding: 10px 26px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 0.15s ease;
+    }
+    .btn-outline:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand">
+        <div class="brand-logo-icon">F</div>
+        <div class="brand-text">
+          <span class="brand-name">Found It</span>
+          <span class="brand-tag">Pure Offline Locator</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#offline-promise">Offline Promise</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="privacy.html" class="btn-cta">Play Console Policy</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-pill">
+        <span>📍</span> Live Offline Stock Availability in Yavatmal & Expanding
+      </div>
+      <h1 class="hero-title">Need an item immediately?<br>Find which nearby shop has it in stock.</h1>
+      <p class="hero-subtitle">
+        Found It is India's dedicated hyperlocal product locator. No waiting for deliveries, no inflated surge fees, and no fake stock listings. Walk into the nearest local shop and buy with confidence.
+      </p>
+      <div class="cta-button-group">
+        <a href="privacy.html" class="btn-white" style="background: var(--primary); color: #FFF;">Read Privacy Policy</a>
+        <a href="terms.html" class="btn-outline" style="border-color: var(--primary); color: var(--primary);">Terms of Service</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Pillars -->
+  <section id="how-it-works" class="features-section">
+    <div class="section-header">
+      <h2>Why Found It is Different</h2>
+      <p>We empower local physical merchants and give shoppers immediate, transparent product access.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">🛒</div>
+        <div class="pillar-title">Real-Time In-Stock</div>
+        <div class="pillar-desc">
+          Know exactly which store around the corner has your brand of biscuit, medicine, charging cable, or fresh grocery in live inventory.
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">🚶</div>
+        <div class="pillar-title">Walking Proximity</div>
+        <div class="pillar-desc">
+          Calculates precise walking and driving distance (in meters and km) with one-click directions straight to the shop's door.
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">📞</div>
+        <div class="pillar-title">Direct Shopkeeper Contact</div>
+        <div class="pillar-desc">
+          Call or WhatsApp the verified store proprietor directly. Ask questions, reserve items, or confirm prices before stepping out.
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">🚫</div>
+        <div class="pillar-title">Zero Delivery Surges</div>
+        <div class="pillar-desc">
+          No delivery fees, no minimum cart hurdles, and no packaging markups. You pay original shelf MRP directly to the retailer.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offline Promise Banner -->
+  <section id="offline-promise" class="cta-banner">
+    <h2>Our Pure Offline Guarantee</h2>
+    <p>
+      Found It does not take online payments, does not handle deliveries, and does not sell your private data. Everything we do is built to support neighborhood brick-and-mortar retail economy.
+    </p>
+    <div class="cta-button-group">
+      <a href="privacy.html" class="btn-white">Review Legal Privacy Policy</a>
+      <a href="terms.html" class="btn-outline">Read User Terms</a>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="brand">
+          <div class="brand-logo-icon">F</div>
+          <div class="brand-text">
+            <span class="brand-name">Found It</span>
+            <span class="brand-tag">Pure Offline Locator</span>
+          </div>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="mailto:privacy@foundit.org.in">Grievance Cell</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Found It Technologies. All rights reserved. Registered in Maharashtra, India.</p>
+        <p>Google Play Store & DPDP Act 2023 Conforming Production Website.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
